@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(26, 28, 34);;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c03b2d; /* Logo color */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 200px; /* Restrict the width of each input */
+  margin-right: 15px; /* Gap between "Search events" and "Choose location" */
+}
+
+.search-container input {
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem; /* Extra padding on the right for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.search-container:last-of-type {
+  margin-right: 0; 
+}
+
+.search-container .search-icon, .search-container .location-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #c03b2d; 
+  font-size: 1rem;
+  pointer-events: none; 
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(201, 190, 190);
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #c03b2d; 
+}
